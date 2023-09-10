@@ -199,6 +199,22 @@ Output :
 1
 */
 
-const count = (input, match) => {
-  
+const count = (input, match, caseSen = true) => {
+  if(!caseSen){
+    input = input.toLowerCase();
+    match = match.toLowerCase();
+  }
+
+  let count = 0;
+  let index = input.indexOf(match);
+  // console.log(index);
+
+  while(index !== -1){
+    count++;
+    // console.log(`count = ${count}`);
+    index = input.indexOf(match,index+1); // here with every iteration match will searched from index+1. 
+    console.log(`index is ${index}`);
+  }
+  return count;
 }
+console.log(count("The quick brown fox jumps over the lazy dog the frog is the", 'The'));

@@ -22,3 +22,4 @@ let max = 30;
 let min = 50;
 let random_num = Math.floor((Math.random() * (max - min + 1))) + min
 console.log(random_num);
+
