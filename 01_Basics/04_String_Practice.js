@@ -218,3 +218,15 @@ const count = (input, match, caseSen = true) => {
   return count;
 }
 console.log(count("The quick brown fox jumps over the lazy dog the frog is the", 'The'));
+console.log("------------------------------------------------------------")
+
+// let str = "ABCZ";
+// console.log([...str].length);
+// console.log(str.length);
+// console.log(str);
+// let abc = [...str];
+
+// console.log(abc);
+// abc[2] = 'H'
+// console.log(abc);
+// console.log("------------------------------------------------------------")
