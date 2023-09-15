@@ -58,23 +58,36 @@ jsUser.greetName = function(){
 jsUser.greetName() 
 console.log(jsUser);
 
-// *******************************************************
-console.log("----------------------------------------");
+console.log("----------------------------------------------------------------------------------------");
 
 const noobPlayer = new Object();
-noobPlayer.name = {
+noobPlayer.userName = {
     userFullName : {
-        firstName : "Dinesh",
-        lastName : "Banhantti"
+        name : "Dinesh",
+        inGameName : "ignite"
     }
 }
-
-noobPlayer.gameName = "Ignite";
 noobPlayer.kd = 2.69;
-noobPlayer.property = {
-    botKiller : true,
-    killChor : true,
-    tattiAim : true
-}
+noobPlayer.botKiller = true,
+noobPlayer.killChor = true,
+noobPlayer.tattiAim = true
 
-console.log(noobPlayer);
+console.log(noobPlayer.userName.userFullName.inGameName);
+
+// Print keys of object
+console.log(Object.keys(noobPlayer));
+
+// Combining the Object
+
+let obj1 = {1 : 'a', 2 : 'b'}
+let obj2 = {3 : 'c', 4 : 'd'}
+
+// let obj3 = {obj1, obj2} //{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
+
+// Object.assign(target, source)
+// let obj3 = Object.assign({}, obj1, obj2) //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+let obj3 = {...obj1, ...obj2}
+
+console.log(obj3);
+
+console.log('------------------------------------------------------------------------------------------');

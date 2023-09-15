@@ -286,14 +286,15 @@ console.log(binary_Search(items, 2858)); //4
 console.log(binary_Search(items, 288)); //4
 console.log("----------------------------------------------------------");
 
-
+//for in
 let a1 = [10,20,30,50,40];
 for(let i in a1){
     console.log(i);          //0 1 2 3 4
-    console.log(a[i]);      //10 20 30 50 40 
+    console.log(a1[i]);      //10 20 30 50 40 
 }
 
-for (const iterator of a1) {
-    console.log(iterator );     //10 20 30 50 40 
+//for of
+for (const i of a1) {
+    console.log(i);     //10 20 30 50 40 
     
 }
