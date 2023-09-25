@@ -296,5 +296,4 @@ for(let i in a1){
 //for of
 for (const i of a1) {
     console.log(i);     //10 20 30 50 40 
-    
 }

@@ -91,3 +91,16 @@ let obj3 = {...obj1, ...obj2}
 console.log(obj3);
 
 console.log('------------------------------------------------------------------------------------------');
+
+// Object destructuring
+const course = {
+    name : "BGMI Rank Push",
+    price : 999,
+    courseInstructor : "Troy_OP"
+}
+
+const {courseInstructor : teacher} = course
+console.log(teacher);
+
+console.log('------------------------------------------------------------------------------------------');
+
