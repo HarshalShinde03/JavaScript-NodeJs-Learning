@@ -5,7 +5,7 @@ hello = function (){
 
 // Using Arrow Functions
 hello = () => {
-    console.log(Helloooooo....);
+    console.log("Helloooooo....");
 }
 
 
@@ -37,3 +37,38 @@ const checkPalindrom = (str) => {
 }
 
 console.log(checkPalindrom('harah'));
+console.log("----------------------------------------------------------------------------------------------------------");
+
+
+const factorial = (y) =>{
+    let fact = 1;
+    while(y > 1){
+      fact *= y;
+      y--;
+    }
+    return fact
+}  
+console.log(factorial(number))
+console.log("----------------------------------------------------------------------------------------------------------");
+
+
+const check_prime = (n) => {
+    for(let i = 2; i<n; i++){
+      if (n%i == 0){
+        return "not prime"
+      }
+    }
+    return "prime"
+}
+  
+console.log(check_prime(2))
+console.log("----------------------------------------------------------------------------------------------------------");
+
+
+
+console.log("----------------------------------------------------------------------------------------------------------");
+  
+  
+  
+  
+console.log("----------------------------------------------------------------------------------------------------------");
