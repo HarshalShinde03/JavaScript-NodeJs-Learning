@@ -1,3 +1,14 @@
+// Using Default Function 
+hello = function (){
+    console.log("Helloooooo...");
+}
+
+// Using Arrow Functions
+hello = () => {
+    console.log(Helloooooo....);
+}
+
+
 /*
 1. Write a JavaScript function that reverses a number.
 Example x = 32243;
