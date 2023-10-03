@@ -230,3 +230,27 @@ console.log("------------------------------------------------------------")
 // abc[2] = 'H'
 // console.log(abc);
 // console.log("------------------------------------------------------------");
+
+/*
+21. Write a JavaScript function to repeat a string for a specified time.
+Test Data :
+console.log(repeat_string('a', 4));
+console.log(repeat_string('a'));
+Output :
+"aaaa"
+"Error in string or count."
+*/
+
+const repeat_string = (str, count=0) =>{
+  let op = str;
+  if(count<1){
+    return "Error in string or count.";
+  }
+  for (let i = 1; i < count; i++) {
+    op += str
+  }
+  return op
+}
+
+console.log(repeat_string('a', 4));
+console.log(repeat_string('a'));
