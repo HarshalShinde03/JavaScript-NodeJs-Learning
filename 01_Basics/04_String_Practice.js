@@ -242,7 +242,7 @@ Output :
 */
 
 const repeat_string = (str, count=0) =>{
-  let op = str;
+  let op = str
   if(count<1){
     return "Error in string or count.";
   }
