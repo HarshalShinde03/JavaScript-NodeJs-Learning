@@ -1,3 +1,4 @@
+
 /*
 Square the value of every element in the array. Presume that you will only get numbers in the input array.
 
@@ -83,6 +84,8 @@ const input = [
       name: "Jennifer",
       age: 65,
     },
-  ];
+];
 
-  
+let op = input.map( (val)=>val.age ).sort((a,b) => a - b)
+
+console.log(`[${op[0]},${op[op.length-1]},${op[op.length-1] - op[0]}]`);
