@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element Add</title>
+</head>
+<body>
+
+    <header>
+        <h2>Welcome to Our Website</h2>
+        <p>Your source for the latest news and updates.</p>
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h2>Our Services</h2>
+    <div class="parent">
+        <div class="child" style="font-size: 30px;">Monday</div>
+        <div class="child" style="font-size: 30px;">Tuesday</div>
+        <div class="child" style="font-size: 30px;">Wednesday</div>
+        <div class="child" style="font-size: 30px;">Thursday</div>
+    </div>
+</body>
+<script>
+    let a = document.querySelector('.parent');
+    console.log(a);
+    let list = a.children
+    for (let i = 0; i < list.length; i++) {
+        console.log(list[i].innerHTML);
+    }
+    list[1].style.color = 'red'
+
+    let child1 = document.querySelector('.child')
+    console.log(child1.parentElement);
+</script>
+
+</html>
