@@ -13,7 +13,7 @@
         <hr>
     </header>
     <nav>
-        <ul>
+        <ul class="main">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
@@ -30,6 +30,27 @@
     </div>
 </body>
 <script>
+    
+    add_li = (item) =>{
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(item))
+        document.querySelector('.main').appendChild(li)
+    }
+
+    add_li("Java");
+    add_li("Python");
+
+    const second_lang = document.querySelector("li:nth-child(2)")
+    // second_lang.innerHTML = "HOLAAAAAA"
+    const newli = document.createElement('li')
+    newli.textContent = "Holaaaa.."
+    second_lang.replaceWith(newli)
+
+    const abc = document.querySelector('div:nth-child(2)')
+    console.log(abc)
+    abc.innerText = "ha nrshallnllll"
+
+
     let a = document.querySelector('.parent');
     console.log(a);
     let list = a.children
