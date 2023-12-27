@@ -25,6 +25,7 @@ promise
 Output :- Error 1, Success 4
 */
 
+
 function job(state) {
     return new Promise(function(resolve, reject) {
         if (state) {
