@@ -32,3 +32,13 @@ let ans = promiseOne.then((data)=>{
 })
 
 //-----------------------------------------------------------------
+
+const p1 = new Promise((res,rej)=>{
+  if(num !== typeof 1){
+    rej('Number not detected');
+  }else if(num % 2 === 0){
+    res('Number is even');
+  }else{
+    res('Number is odd');
+  }
+})
