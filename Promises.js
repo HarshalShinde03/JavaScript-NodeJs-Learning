@@ -23,7 +23,7 @@ let step3 = step2.then( (data)=>{
 } )
 
 let step4 = step3.catch((data)=>{
-    console.log('Yaha error hai... \n',data);
+    console.log('Yaha error hai.... \n',data);
 })
 
 /*
