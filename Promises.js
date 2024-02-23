@@ -1,4 +1,5 @@
 // Introdcution to Promises
+
 // Promise represents eventual completion or failur of a asynchronus opreation and its resulting value..
 /*
 Syntax :->  let a = new Promise( function(resolve,reject){  code  } )
