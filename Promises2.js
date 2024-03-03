@@ -11,7 +11,6 @@ anotherPromise = myPromise.then((value)=>{
 
 //--------------------------------------------------------------
 
-
 const promiseOne = new Promise((res,rej)=>{
     setTimeout(()=>{
         let error = false;
