@@ -21,5 +21,5 @@ console.log(mycar.make); // "Toyota"
 const p1 = new Promise((res,rej)=>{
     setTimeout(()=>{
         res("Hello resolved");
-    },1000).then(data=>)
+    },1000).then(data=>console.log(data);
 })
