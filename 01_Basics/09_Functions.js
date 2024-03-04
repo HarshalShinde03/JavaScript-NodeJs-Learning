@@ -16,4 +16,10 @@ console.log(mycar.make); // "Honda"
 myFunc(mycar);
 console.log(mycar.make); // "Toyota"
   
-  
+
+// arrow function
+const p1 = new Promise((res,rej)=>{
+    setTimeout(()=>{
+        res("Hello resolved");
+    },1000).then(data=>)
+})
