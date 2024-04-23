@@ -1,3 +1,8 @@
+// gist link - https://gist.github.com/hkirat/1618d30e03dc2c276b1cd4b351028d14
+// 1. Create a new express app
+// 2. Create a new route /signin
+// 
+
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const jwtPassword = "123456";
