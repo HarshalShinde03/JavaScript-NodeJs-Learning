@@ -9,6 +9,7 @@ const jwtPassword = "123456";
 
 const app = express();
 
+app.use(express.json())
 const ALL_USERS = [
   {
     username: "harkirat@gmail.com",
@@ -49,7 +50,7 @@ app.post("/signin", function (req, res) {
     });
   }
 
-  var token = jwt.sign({ username: username }, "shhhhh");
+  var token = jwt.sign({ username: username }, jwtPassword);
   return res.json({
     token,
   });
@@ -60,7 +61,15 @@ app.get("/users", function (req, res) {
   try {
     const decoded = jwt.verify(token, jwtPassword);
     const username = decoded.username;
-    // return a list of users other than this username
+    res.json({
+      users : ALL_USERS.filter((user)=>{
+        if(user.username == username){
+          return false;
+        }else{
+          return true;
+        }
+      }),
+    })
   } catch (err) {
     return res.status(403).json({
       msg: "Invalid token",
