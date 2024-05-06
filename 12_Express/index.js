@@ -1,7 +1,6 @@
 const express = require('express')
 const z = require('zod')
 const app = express()
-
 app.use(express.json())
 
 function validateInput(input){
@@ -23,7 +22,7 @@ app.post('/',(req,res)=>{
 
         res.json({
             msg : `Success`,
-            data: ab.email,
+            data: {email: ab.email, password:ab.password},
         })
     }else{
         res.json([
